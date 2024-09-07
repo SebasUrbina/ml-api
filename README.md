@@ -14,15 +14,15 @@ pip install -r requirements.txt # to install the requirements
 
 ### Init the API
 
-To initialize the API we have two options
+To initialize the API we have two options (You should use this in this case)
 
 1. Write on the terminal the following code:
 
     ```
-    uvicorn fast_api:app --port 8000
+    uvicorn fast_api:app --host 0.0.0.0 --port 8000
     ```
 
-2. Add the folllowing code at the end of your API script (This is implemented on the ``fast_api.py``)
+2. Add the folllowing code at the end of your API script 
 
     ```python
     if __name__ == '__main__':

@@ -25,6 +25,3 @@ async def predict(
     label = make_prediction(sepal_length, sepal_width, petal_length, petal_width)
 
     return {"label": label}
-
-if __name__ == "__main__":
-    uvicorn.run("fastapi_app:app", port=8000)
